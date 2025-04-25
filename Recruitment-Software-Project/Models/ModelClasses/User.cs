@@ -14,4 +14,11 @@ namespace Recruitment_Software_Project.Models.ModelClasses
         //public ICollection<Job> PostedJobs { get; set; }
         //public ICollection<Application> Applications { get; set; }
     }
+
+    public class LoggedInRequest
+    {
+        public string Email { get; set; }
+        public string Password { get; set; }
+    }
+
 }
