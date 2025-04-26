@@ -10,17 +10,23 @@ namespace Recruitment_Software_Project.Controllers
     [ApiController]
     public class RecruitmentController : ControllerBase
     {
-        private readonly RecruitmentService recruitmentService;
+        private readonly IRecruitmentService recruitmentService;
 
-        public RecruitmentController(RecruitmentService recruitmentService)
+        public RecruitmentController(IRecruitmentService recruitmentService)
         {
             this.recruitmentService = recruitmentService;
         }
 
-        [HttpPost("")]
-        public async Task<Response> RegistrationRequest(User addUserRequest)
+        [HttpPost("RegistrationRequest")]
+        public async Task<Response> RegistrationRequest(User addUser)
         {
-            return await recruitmentService.RegistrationRequest(addUserRequest);
+            return await recruitmentService.RegistrationRequest(addUser);
+        }
+
+        [HttpPost("AuthenticationRequest")]
+        public async Task<Response> AuthenticationRequest(LoggedInRequest user)
+        {
+            return await recruitmentService.AuthenticationRequest(user);
         }
     }
 }
