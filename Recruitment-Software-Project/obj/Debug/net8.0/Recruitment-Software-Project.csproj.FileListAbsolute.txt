@@ -136,3 +136,9 @@ D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\obj\Debug\
 D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\obj\Debug\net8.0\Recruitment-Software-Project.pdb
 D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\obj\Debug\net8.0\Recruitment-Software-Project.genruntimeconfig.cache
 D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\obj\Debug\net8.0\ref\Recruitment-Software-Project.dll
+D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\bin\Debug\net8.0\ClientApp\RecruitmentApp\angular.json
+D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\bin\Debug\net8.0\ClientApp\RecruitmentApp\package-lock.json
+D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\bin\Debug\net8.0\ClientApp\RecruitmentApp\package.json
+D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\bin\Debug\net8.0\ClientApp\RecruitmentApp\tsconfig.app.json
+D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\bin\Debug\net8.0\ClientApp\RecruitmentApp\tsconfig.json
+D:\Projects\Recruitment-Software-Project\Recruitment-Software-Project\bin\Debug\net8.0\ClientApp\RecruitmentApp\tsconfig.spec.json

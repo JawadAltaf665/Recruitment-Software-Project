@@ -73,10 +73,21 @@ namespace Recruitment_Software_Project.Services
                 var passHasher = new PasswordHasher<User>();
                 addUser.Password = passHasher.HashPassword(addUser, addUser.Password);
 
-                await dBContext.Users.AddAsync(addUser);
-                await dBContext.SaveChangesAsync();
-                response.StatusCode = 200;
-                response.ResponseMessage = "OKAY!";
+                if(addUser.Id == 0)
+                {
+                    await dBContext.Users.AddAsync(addUser);
+                    await dBContext.SaveChangesAsync();
+                    response.StatusCode = 201;
+                    response.ResponseMessage = "User Added!";
+                }
+                else
+                {
+                    dBContext.Users.Update(addUser);
+                    await dBContext.SaveChangesAsync();
+                    response.StatusCode = 200;
+                    response.ResponseMessage = "User Updated!";
+                }
+                
             }
             catch (Exception ex)
             {
